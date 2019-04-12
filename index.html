@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/my_css.css">
+
+    <title>Circuit Engine</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-muted">Meko Draw Engine</h2>
+    </div>
+
+    <br><br><br>
+
+    <div class="container">
+        <div class="container col-md-2">
+            <select class="custom-select" id="wireColorSelectBox">
+                <option value="#212121">Choose a color</option>
+                <option value="#FAFAFA">WHITE</option>
+                <option value="#212121">BLACK</option>
+                <option value="#F44336">RED</option>
+                <option value="#2962FF">BLUE</option>
+                <option value="#00C853">GREEN</option>
+            </select>
+        </div>
+
+        <div class="container col-md-4">
+            <select class="custom-select" id="componentSelectBox">
+                <option value="0">Raspberry Pi</option>
+                <option value="1">Arduino UNO</option>
+            </select>
+            <button onclick="addComponent()">Add</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <canvas id="microcomputer_canvas" width="900" height="600"></canvas>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="static/javascript/classes/WireClass.js"></script>
+    <script src="static/javascript/classes/ComponentClass.js"></script>
+    <script src="static/javascript/shapeEngine.js"></script>
+
+</body>
+</html>
